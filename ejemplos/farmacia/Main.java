@@ -1,11 +1,10 @@
-package farmacia;
+package ejemplos.farmacia;
 
 import java.util.ArrayList;
 
-import farmacia.filtros.Filtro;
-import farmacia.filtros.FiltroAnd;
-import farmacia.filtros.FiltroLaboratorio;
-import farmacia.filtros.FiltroOr;
+import ejemplos.farmacia.filtros.Filtro;
+import ejemplos.farmacia.filtros.FiltroLaboratorio;
+import ejemplos.farmacia.filtros.FiltroOr;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package farmacia;
+package ejemplos.farmacia;
 
 import java.util.ArrayList;
 

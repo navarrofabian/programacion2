@@ -1,9 +1,9 @@
-package farmacia;
+package ejemplos.farmacia;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-import farmacia.filtros.Filtro;
+import ejemplos.farmacia.filtros.Filtro;
 
 public class Farmacia {
 
