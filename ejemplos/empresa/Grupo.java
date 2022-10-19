@@ -46,7 +46,6 @@ public class Grupo extends ElementoEmpresa {
         ArrayList<Empleado> empleadosConEspecialidad = this.empleadosConEsp(especialidad);
         Collections.sort(empleadosConEspecialidad, orden);
         return empleadosConEspecialidad;
-
     }
 
 

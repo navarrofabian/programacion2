@@ -10,6 +10,7 @@ public class Main {
         Empleado pablo = new Empleado("pablo", "perez", "Java", 70000.00);
         Empleado pedro = new Empleado("pedro", "perez", "js", 70000.00);
         Empleado juan2 = new Empleado("juan2", "perez", "js", 70000.00);
+        Empleado juan3 = new Empleado("juan3", "pereeeez", "js", 70000.00);
         Empleado luis = new Empleado("luis", "perez", "js", 70000.00);
 
         Grupo g1 = new Grupo("backend");
@@ -24,7 +25,7 @@ public class Main {
 
         Grupo g3 = new Grupo("Investigacion");
 
-        g3.addElemento(juan2);
+        g3.addElemento(juan3);
 
 
         Grupo sucTandil = new Grupo("SucTandil");

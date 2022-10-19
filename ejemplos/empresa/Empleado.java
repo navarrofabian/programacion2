@@ -86,7 +86,7 @@ public class Empleado extends ElementoEmpresa{
                 ", apellido='" + apellido + '\'' +
                 ", especialidad='" + especialidad + '\'' +
                 ", sueldo=" + sueldo +
-                '}';
+                '}' + "\n";
     }
 }
 
