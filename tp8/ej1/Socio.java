@@ -1,8 +1,5 @@
 package tp8.ej1;
 
-import tp8.ej1.Alquiler;
-import tp8.ej6arbolBinario.Nodo;
-
 import java.util.ArrayList;
 
 public class Socio {

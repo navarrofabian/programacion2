@@ -5,7 +5,7 @@ import tp8.ej2SistemaDeArchivos.filtros.Filtro;
 
 import java.util.ArrayList;
 
-public class Archivo extends ElementoFS {
+public class Archivo extends ElementoFS{
     public Archivo(String nombre) {
         super(nombre);
     }
@@ -17,14 +17,18 @@ public class Archivo extends ElementoFS {
 
     @Override
     public int getCantElementos() {
-        return 0;
+        return 1;
     }
+    //public int compareTo(Archivo other) {
+      //  return this.getNombre().compareTo(other.getNombre());
+    //}
 
     @Override
     public ArrayList<ElementoFS> buscar(Filtro filtro) {
         ArrayList<ElementoFS> res = new ArrayList<>();
-        filtro.cumple(this);
-        res.add(this);
+        if(filtro.cumple(this)){
+            res.add(this);
+        }
         return res;
     }
 }

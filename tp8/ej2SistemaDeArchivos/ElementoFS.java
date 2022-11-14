@@ -4,6 +4,8 @@ import tp8.ej2SistemaDeArchivos.filtros.Filtro;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public abstract class ElementoFS implements Comparable<ElementoFS> {
 
@@ -20,6 +22,12 @@ public abstract class ElementoFS implements Comparable<ElementoFS> {
     public abstract double getTamanio();
     public abstract int getCantElementos();
     public abstract ArrayList<ElementoFS> buscar(Filtro filtro);
+
+    public ArrayList<ElementoFS> buscar(Filtro filtro, Comparator<ElementoFS> c){
+        ArrayList <ElementoFS> res = this.buscar(filtro);
+        Collections.sort(res, c);
+        return res;
+    }
 
 
 
@@ -51,6 +59,6 @@ public abstract class ElementoFS implements Comparable<ElementoFS> {
 
     @Override
     public int compareTo(ElementoFS o) {
-        return 0;
+        return this.getNombre().compareTo(o.nombre);
     }
 }

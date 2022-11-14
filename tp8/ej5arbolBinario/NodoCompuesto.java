@@ -1,4 +1,4 @@
-package tp8.ej6arbolBinario;
+package tp8.ej5arbolBinario;
 
 import java.util.ArrayList;
 

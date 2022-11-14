@@ -12,6 +12,12 @@ public class Pagina {
         this.componentes = new ArrayList<Componente>();
     }
 
+
+    public void agregarTamanioTotal(){
+        Componente componente = new Parrafo(14, "el tamanio total de la pagina es: " +this.getTamanioTotal());
+        this.addComponente(componente, -1);
+    }
+
     public void addComponente(Componente componente, int posicion){
         if(posicion == -1){
             this.componentes.add(componente);

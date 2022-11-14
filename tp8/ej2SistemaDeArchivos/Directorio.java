@@ -1,6 +1,5 @@
 package tp8.ej2SistemaDeArchivos;
 
-import tp6.ej2.Elemento;
 import tp8.ej2SistemaDeArchivos.filtros.Filtro;
 
 import java.util.ArrayList;
@@ -36,12 +35,8 @@ public class Directorio extends ElementoFS {
     @Override
     public ArrayList<ElementoFS> buscar(Filtro filtro) {
         ArrayList<ElementoFS> result = new ArrayList<>();
-
         for(ElementoFS e: elementos){
-            if(filtro.cumple(e)){
                 result.addAll(e.buscar(filtro));
-            }
-
         }
         return result;
     }
